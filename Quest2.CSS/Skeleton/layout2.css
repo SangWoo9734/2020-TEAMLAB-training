@@ -13,7 +13,6 @@ body {
 	background-color: skyblue;
 	height : 100%;
 	display: table-cell;
-	/* TODO: 이 곳을 채우세요! */
 }
 
 .left {
@@ -21,7 +20,6 @@ body {
 	height: 100%;
 	width : 200px;
 	display: table-cell;
-	/* TODO: 이 곳을 채우세요! */
 }
 
 .right {
@@ -29,5 +27,4 @@ body {
 	height : 100%;
 	width : 300px;
 	display: table-cell;
-	/* TODO: 이 곳을 채우세요! */
 }
