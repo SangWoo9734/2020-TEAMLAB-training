@@ -14,14 +14,12 @@ body {
 	grid-template-rows: 100%;
 	height: 100%;
 	top :0;
-	/* TODO: 이 곳을 채우세요! */
 }
 
 .main {
 	background-color: skyblue;
 	height:100%;
 	top :0;
-	/* TODO: 이 곳을 채우세요! */
 }
 
 .main header {
@@ -29,7 +27,6 @@ body {
     height : 30px;
 	overflow: hidden;
 	top :0;
-	/* TODO: 이 곳을 채우세요! */
 }
 
 .left {
@@ -37,14 +34,12 @@ body {
 	height: 100%;
 	top :0;
 	overflow: hidden;
-	/* TODO: 이 곳을 채우세요! */
 }
 
 .right {
 	background-color: greenyellow;
 	height:100%;
 	top :0;
-	/* TODO: 이 곳을 채우세요! */
 }
 
 footer {
@@ -54,5 +49,4 @@ footer {
 	display: inline-block;
     position: fixed;
     bottom:0;
-	/* TODO: 이 곳을 채우세요! */
 }
