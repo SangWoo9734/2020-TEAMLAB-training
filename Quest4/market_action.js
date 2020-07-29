@@ -1,7 +1,7 @@
 let colors = ["blue", "yellow", "pink"];
 let sizes = ["small", "medium", "large"];
 let types = ['p', 's', 't'];
-let sex = ['Man', 'Woman'];
+let gender = ['Man', 'Woman'];
 
 const products = [];
 
@@ -27,8 +27,7 @@ function showProducts(id) {
     var addForm = document.createElement("div");
         selectedItem.innerHTML = ""
     for (let product of id){
-        selectedItem.innerHTML += "<div class = \"products-frame\"><img src=\"imgs/" + product.color + "_" + product.type + ".png\" alt=\"button1\" class = \"products-image\"><div class = \"products-discribe\">" +product.sex+", " + product.size + "-size </div></div>\n"
-        console.log(product);
+        selectedItem.innerHTML += "<div class = \"products-frame\"><img src=\"imgs/" + product.color + "_" + product.type + ".png\" alt=\"button1\" class = \"products-image\"><div class = \"products-discribe\">" +product.gender+", " + product.size + "-size </div></div>\n"
     }
     
 }
