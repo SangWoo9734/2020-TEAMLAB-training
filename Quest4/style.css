@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
     background-color: dimgray;
 }
@@ -100,3 +101,99 @@ button[class*="png"]:hover{
 .products-image {
     margin: 10px;
 }
+=======
+html {
+    background-color: dimgray;
+}
+header {
+    width : 100%;
+    text-align: center;
+}
+
+#buttons-layout {
+    display : flex;
+    justify-content: center;
+    width : 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-top : 10px;
+    margin-bottom : 10px;
+}
+
+button[class*="buttons"] {
+    font-size: 20px;
+    border-radius: 0;
+    border : none;
+    margin: 10px;
+    border-radius: 5px;
+}
+button[class*="txt"] {
+    height : 40px;
+    padding : 0px 6px 0px 6px;
+}
+button[class*="txt"]:hover{
+    transform : scale(1.2);
+    font-size : 20px;
+}
+.buttons-png{
+    background-color: dimgray;
+}
+img[class *= "image"] {
+    width : 40px;
+    height : 40px;
+}
+button[class*="png"]:hover{
+    transform: scale(1.2);
+}
+
+#buttons-blue {
+    background-color: dodgerblue;
+}
+#buttons-yellow {
+    background-color: yellow;
+}
+#buttons-pink {
+    background-color: violet;
+}
+#buttons-products {
+    background-color: coral;
+}
+#products {
+    width : 30%;
+    height : 700px; 
+    margin-top : 20px;
+    margin-bottom : 20px;
+    margin-right: 35%;
+    margin-left: 35%;
+    overflow-y: scroll;
+    align-items: center;
+}
+#products::-webkit-scrollbar {
+    width : 8px;
+}
+#products::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+
+
+.products-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin : 10px;
+}
+
+.products-discribe {
+    margin: 10px;
+    font-size: 16px;
+    margin-top : 17px;
+    padding-left: 10px;
+}
+.products-image {
+    margin: 10px;
+}
+
+>>>>>>> e808450e9eb36284ba85860b2946069d2e5c4fe6
