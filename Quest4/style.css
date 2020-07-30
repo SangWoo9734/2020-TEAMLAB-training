@@ -5,7 +5,13 @@ header {
     width : 100%;
     text-align: center;
 }
-
+img {
+    margin : 5px 0 5px 0;
+}
+img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+} 
 #buttons-layout {
     display : flex;
     justify-content: center;
@@ -20,8 +26,9 @@ button[class*="buttons"] {
     font-size: 20px;
     border-radius: 0;
     border : none;
-    margin: 10px;
+    margin: 0 10px 0 10px;
     border-radius: 5px;
+    outline : none;
 }
 button[class*="txt"] {
     height : 40px;
@@ -30,7 +37,9 @@ button[class*="txt"] {
 button[class*="txt"]:hover{
     transform : scale(1.2);
     font-size : 20px;
+    cursor: pointer;
 }
+
 .buttons-png{
     background-color: dimgray;
 }
@@ -56,7 +65,7 @@ button[class*="png"]:hover{
 }
 #products {
     width : 30%;
-    height : 700px; 
+    height : 75vh ;
     margin-top : 20px;
     margin-bottom : 20px;
     margin-right: 35%;
@@ -91,4 +100,3 @@ button[class*="png"]:hover{
 .products-image {
     margin: 10px;
 }
-
