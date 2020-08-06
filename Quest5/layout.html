@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>파일 - OneDrive</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-inverse navbar-expand " id="header">
+                    <div class="container-fluid">
+                      <!-- Brand and toggle get grouped for better mobile display -->
+                      <div class="navbar-header">
+                        <!-- <a href="#" class="navbar-nav collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><img src="img/user.png" alt=""></span></a>
+                        <a href="#"class="navbar-nav collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><img src="img/more.png" alt=""></a> -->
+                        <a href="#" class="navbar-brand btn btn-primary" role="button" style="color:white;" id="side-menu"><span  class="glyphicon glyphicon-th visible-lg visible-md"></span><span class="glyphicon glyphicon-menu-hamburger visible-xs visible-sm"></span>
+                        </a>
+                        <a class="navbar-brand" href="#" style="color:white; margin-left:0px">OneDrive</a>
+                        <div class="visible-xs" id = "user-in-xs">
+                          <a href="#" class="user-menu"><span class="glyphicon glyphicon-option-horizontal text-muted" id='user-ask'></span></a>
+                          <a href="#" id="user"><img src="img/user.png" alt="user"  id='user-icon'></a>
+                        </div>
+                  
+                      <!-- Collect the nav links, forms, and other content for toggling -->
+                      <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+                        <!-- <ul class="nav navbar-nav">
+                          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                          <li><a href="#">Link</a></li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">One more separated link</a></li>
+                            </ul>
+                          </li>
+                        </ul> -->
+                        <ul class="nav navbar-nav navbar-right hidden-xs" id="header-user-menu">
+                            <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+                            <li><a href="#" class="user-menu">Message <span class="badge">4</span></a></li>
+                            <li><a href="#" class="user-menu"><span class="glyphicon glyphicon-cog"></span></a></li>
+                            <li><a href="#" class="user-menu"><span class="glyphicon glyphicon-question-sign"></span></a></li>
+                            <li><a href="#" id="user">Park Sangwoo <img src="img/user.png" alt="user"></a></li>
+                        </ul>
+
+                        <div class="navbar-header navbar-right visible-xs">
+                          
+                        </div>
+                      </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                  </nav>
+            </div>
+            <div class="row" id="main">
+                <div id="main-left">
+                  <form class="form-inline search-form" >
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-addon" id="search-button"><span class="glyphicon glyphicon-search text-primary"></span></div>
+                        <input type="text" class="form-control input-lg" id="exampleInputAmount" placeholder="모든 검색">
+                      </div>
+                    </div>
+                  </form>
+                    <div class="row" id="menu-group">
+                        <span class="text-muted" style="font-size: 20px; padding-left:15px;">OneDrive</span> <!--좌측 메뉴 목록-->
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active-menu">파일</a>
+                            <a href="#" class="list-group-item">최근 항목</a>
+                            <a href="#" class="list-group-item">사진</a>
+                            <a href="#" class="list-group-item">공유됨</a>
+                            <a href="#" class="list-group-item">휴지통<span class="badge" id='trash'></span></a>
+                            <a href="#" class="list-group-item">PC</a>
+                          </div>
+                    </div>
+                    <div class="row" id="left-menu-footer"> <!--좌측하단 목록-->
+                        <ul class="list-unstyled">
+                            <li class="left-menu-bottom"><span class="text-info" id="ex_progress">1.1TB 중 364GB 사용</span><div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                  <span class="sr-only">60% Complete</span>
+                                </div>
+                              </div></li>
+                            <li class="left-menu-bottom"><img src="img/quality.png" alt="primium"> 프리미엄 OneDrive</li>
+                            <li class="left-menu-bottom"><a href="#" text-info>OneDrive 앱 다운로드</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="container-fluid" id="main-right">
+                    <div class="row"> <!-- 하위 네비게이션 바-->
+                        <nav class="navbar navbar-default" id='view1'>
+                            <div class="container-fluid">
+                              <!-- Brand and toggle get grouped for better mobile display -->
+                              <div class="row" id="tool-bar">                            
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                                <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                  <span class="sr-only">Toggle navigation</span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                </button> -->
+                                
+                                  <ul class="nav navbar-nav navbar-left">
+                                    <li class="dropdown main-right-header-btn tools-h menu-xs"  id="new">
+                                      <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-plus text-info"></span> <span class="text-xs">새로 만들기</span> <span class="caret"></span></a>
+                                      <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                      </ul>
+                                    </li>
+                                    <li class="dropdown main-right-header-btn tools-h menu-xs"  id="upload">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-upload text-info"></span> <span class="text-xs">업로드</span> <span class="caret"></span></a>
+                                      <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                      </ul>
+                                    </li>
+                                    <li class="main-right-header-btn tools"><a href="#"><span class="glyphicon glyphicon-transfer text-info"></span> 공유</a></li>
+                                    <li class="main-right-header-btn tools"><a href="#"><span class="glyphicon glyphicon-save text-info"></span> 다운로드</a></li>
+                                    <li class="main-right-header-btn tools-hide" id="delete"><a href="#"><span class="glyphicon glyphicon-trash text-info"></span> 삭제</a></li>
+                                    <li class="main-right-header-btn tools"><a href="#"><span class="glyphicon glyphicon-level-up text-info"></span> 이동</a></li>
+                                    <li class="main-right-header-btn tools"><a href="#"><span class="glyphicon glyphicon-duplicate text-info"></span> 복사</a></li>
+                                    <li class="main-right-header-btn tools tools-h"><a href="#"><span class="glyphicon glyphicon-pencil text-info"></span> 이름 바꾸기</a></li>
+                                    <li class="main-right-header-btn tools tools-h"><a href="#"><span class="glyphicon glyphicon-camera text-info"></span> 폴더에서 앨범 만들기</a></li>
+                                    <li class="main-right-header-btn tools tools-h"><a href="#"><span class="glyphicon glyphicon-console text-info"></span> 임베드</a></li>
+
+                                    <!--파일 선택시-->
+                                    <li class="main-right-header-btn tools-hide"><a href="#"><span class="glyphicon glyphicon-picture text-info"></span> 앨범에 추가</a></li>
+                                    <li class="main-right-header-btn tools-hide"><a href="#"><span class="glyphicon glyphicon-tags text-info"></span> 태그 편집</a></li>
+
+                                    <li class="dropdown main-right-header-btn menu-xs" id="resize">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-option-horizontal text-info" id="upload"></span> <span class="caret"></span></a>
+                                      <ul class="dropdown-menu" role="menu" id="mkdropdown">
+                                        <li class="main-right-header-btn" id="share"><a href="#"><span class="glyphicon glyphicon-transfer text-info"></span> 공유</a></li>
+                                        <li class="main-right-header-btn" id="download"><a href="#"><span class="glyphicon glyphicon-save text-info"></span> 다운로드</a></li>
+                                        <li class="main-right-header-btn" id="move"><a href="#"><span class="glyphicon glyphicon-level-up text-info"></span> 이동</a></li>
+                                        <li class="main-right-header-btn" id="copy"><a href="#"><span class="glyphicon glyphicon-duplicate text-info"></span> 복사</a></li>
+                                        <li class="main-right-header-btn" id="rename"><a href="#"><span class="glyphicon glyphicon-pencil text-info"></span> 이름 바꾸기</a></li>
+                                        <li class="main-right-header-btn" id="album"><a href="#"><span class="glyphicon glyphicon-camera text-info"></span> 폴더에서 앨범 만들기</a></li>
+                                        <li class="main-right-header-btn" id="imbed"><a href="#"><span class="glyphicon glyphicon-console text-info"></span> 임베드</a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+
+                                  <ul class="nav navbar-nav navbar-right">
+                                    <li class="dropdown main-right-header-btn menu-xs" >
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-sort-by-attributes-alt text-info"></span><span class="text-xs"> 정렬 </span><span class="caret"></span></a>
+                                      <ul class="dropdown-menu" role="menu">
+                                        <li class='align'><a href="#" onclick="sortWithStorage(0, 'name')"><span class="glyphicon glyphicon-ok align-icon" style="display:none;"></span>이름</a></li>
+                                        <li class='align'><a href="#" onclick="sortWithDate(1)"><span class="glyphicon glyphicon-ok align-icon" style="display:none;"></span>수정한 날짜</a></li>
+                                        <li class='align'><a href="#" onclick="sortWithStorage(1, 'storage')"><span class="glyphicon glyphicon-ok align-icon" style="display:none;"></span>크기</a></li>
+                                        <li class="divider"></li>
+                                        <li class='align'><a href="#" onclick="sortWithStorage(0, 'name')"><span class="glyphicon glyphicon-ok align-icon" style="display:none;"></span>오름차순</a></li>
+                                        <li class='align'><a href="#" onclick="sortWithStorage(1, 'name')"><span class="glyphicon glyphicon-ok align-icon" style="display:none;"></span>내림차순</a></li>
+                                        <li class="divider"></li>
+                                        <li class='align'><a href="#"><span class="glyphicon glyphicon-ok align-icon" style="display:none;"></span>순서 편집</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">정렬 순서 저장</a></li>
+                                      </ul>
+                                    </li>
+                                    <li class="main-right-header-btn menu-xs"><a href="#"><span class="glyphicon glyphicon-align-left text-info"></span></a></li>
+                                    <li class="main-right-header-btn menu-xs"><a href="#"><span class="glyphicon glyphicon-info-sign text-info"></span></li>
+                                  </ul>
+                                <!-- /.navbar-collapse -->
+                              </div>
+
+                            </div><!-- /.container-fluid -->
+                          </nav>
+                                  
+                    </div>
+                    <div class="row">
+                      <!-- <div id="filesroot">파일</div>파일 경로 -->
+                          <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Library</a></li>
+                            <li class="active">Data</li>
+                          </ol>
+                    </div>
+                    <div class="row"> <!-- 파일 목록-->
+                        <div id="file-list">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th style="width:3%;" class="always"><input type="checkbox" name="selected" id="cb1"><label for="cb1"></label></th>
+                                        <th style="width:35%;" class="always"><div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle table-thead file-selector" data-toggle="dropdown" aria-expanded="false">
+                                              이름 <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#" onclick="sortWithStorage(0, 'name')"><span class="glyphicon glyphicon-sort-by-alphabet"></span> 오름차순</a></li>
+                                              <li><a href="#" onclick="sortWithStorage(1, 'name')"><span class="glyphicon glyphicon-sort-by-alphabet-alt"></span> 내림차순</a></li>
+                                            </ul>
+                                          </div></th>
+                                        <th style="width:12%;"  ><div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle table-thead file-selector" data-toggle="dropdown" aria-expanded="false">
+                                              수정된 날짜 <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#" onclick="sortWithDate(1)">최근 순서</a></li>
+                                              <li><a href="#" onclick="sortWithDate(0)">오래된 순서</a></li>
+                                            </ul>
+                                          </div></th>
+                                        <th style="width:10%;"><div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle table-thead file-selector" data-toggle="dropdown" aria-expanded="false">
+                                              공유됨 <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#" onclick="sortWithStorage(1, 'isShare')">공유됨</a></li>
+                                              <li><a href="#" onclick="sortWithStorage(0, 'isShare')">공유 안됨</a></li>
+                                            </ul>
+                                          </div></th>
+                                        <th style="width:7%;"><div class="btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle table-thead file-selector" data-toggle="dropdown" aria-expanded="false">
+                                              크기 <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                              <li><a href="#" onclick="sortWithStorage(1, 'storage')">큰 순서</a></li>
+                                              <li><a href="#" onclick="sortWithStorage(0, 'storage')">작은 순서</a></li>
+                                            </ul>
+                                          </div></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="storePlace">
+                                                                     
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- 부트 스트랩 자바 스크립트-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="action.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>

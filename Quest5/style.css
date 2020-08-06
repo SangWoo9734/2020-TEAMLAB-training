@@ -1,0 +1,298 @@
+html, body{
+    height:100%;
+    overflow :hidden;
+}
+#user {
+    padding: 5px 15px 5px 15px;
+}
+.user-menu{
+    border-right : 1px solid gray;
+}
+img {
+    width: 40px;
+    height: 40px;
+}
+.navbar {
+    height : 50px;
+    border-radius: 0px;
+    margin : 0px;
+}
+.navbar-brand {
+    margin-right : 10px;
+    color : white;
+    border-radius: 0px;
+}
+.search-form{
+    height: 50px;
+    width : 100%;
+    border-radius:  0;
+    margin-bottom : 20px;
+    border-bottom :1px solid lightgray;
+}
+#search-button{
+    width:50px;
+    border : 0;
+    border-radius: 0;
+    background-color: white;
+}
+#exampleInputAmount{
+    width: 250px;
+    border:0;
+    border-radius: 0;
+}
+.container-fluid:first-child{
+    height : 50px;
+}
+#header {
+    background-color: black;
+    border : 0;
+}
+.progress{
+    height : 3px;
+    width : 80%;
+    margin-bottom: 0;;
+}
+#main {
+    height : 100% !important;
+    display:flex;
+    flex-direction: row;
+}
+#main-left{
+    width: 300px;
+    height : 100%;
+    display: inline-block;
+}
+#main-right {
+    width: calc(100% - 300px);
+    display:inline-block;
+}
+#ex_progress{
+    font-size: 11px;
+}
+
+#main-left {
+    height : 94.5vh;
+    border-right : 1px solid lightgray;
+    padding :0;
+    background-color: white;
+    
+    z-index: 1;
+}
+.list-group-item {
+    border: 0px;
+    border-left : 3px solid white;
+}
+#menu-group{
+    margin : 0px;
+}
+    
+
+tr{
+    border-bottom: 1px solid lightgray;
+}
+.table-thead {
+    border: 0;
+    border-radius: 0;
+    width :  inherit;
+    margin : 0;
+}
+td {
+    padding : 0px !important;
+    text-align: left;
+}
+td button {
+    width: 100%;
+}
+td:first-child{
+    padding-top : 13px;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+td:nth-child(2){
+    width : 44px;
+}
+input[id="cb1"] + label {
+    background-image: url("img/foursquare-check-in.png");
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+	cursor: pointer;
+}
+input[id="cb1"]:checked + label {
+    background-color: dodgerblue;
+    border : 2px solid white;
+}
+input[id="cb1"] {
+	display: none;
+}
+input[class="checking"] + label {
+    background-image: url("img/foursquare-check-in.png");
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+	cursor: pointer;
+}
+input[class="checking"]:checked + label {
+    background-color: dodgerblue;
+    border : 2px solid white;
+}
+input[class="checking"] {
+	display: none;
+}
+label{
+    margin-bottom: 0px !important;
+    margin-top: 5px !important;
+}
+#left-menu-footer{
+    width : 300px;
+    padding : 10px;
+    position :absolute;
+    bottom : 0;
+    margin : 0;
+}
+.breadcrumb{
+    font-size: 30px;
+    background-color: white;
+    margin : 20px 0 20px 0;
+    padding-left : 30px;
+}
+#filesroot{
+    font-size: 40px;
+    margin : 20px 0 20px 0;
+    padding-left : 30px;
+}
+.active-menu{
+    background-color: whitesmoke !important;
+    color : dodgerblue !important;
+    border-radius: 0;
+    border-left : 3px solid dodgerblue;
+}
+.left-menu-bottom{
+    margin-bottom : 7px;
+}
+
+.icon-bar{
+    z-index: 0;
+}
+.collapse{
+    padding:0;
+    width :100%
+}
+th span {
+    margin-right:7px;
+}
+th {
+    font-family: '나눔고딕';
+    font-weight: 500;
+    font-size: 15px;
+    border : none !important;
+}
+thead {
+    border-bottom : 1px solid lightgray;
+}
+tr {
+    border : 0;
+}
+.file-contents {
+    margin-top: 4px;
+    padding-left : 12px;
+}
+tbody {
+    border : none;
+}
+#file-list{
+    width : 100%;
+    padding-left : 30px;
+}
+.main-right-hearder-btn:hover{
+    background-color: lightgray;
+}
+a {
+    color : black;
+}
+a:hover, a:visited {
+    text-decoration :none;;
+    color :black;
+}
+.navbar-right{
+    margin : 0px;
+}
+
+@media (max-width : 1024px){
+    #main-left{
+        position : fixed;
+        top : 50px;
+        left : -300px;
+        box-shadow: 3px 0 3px 0 lightgray;
+    }
+    #main-right{
+        width:100%;
+    }
+
+}
+#user-in-xs{
+    text-align: right;
+
+}
+#user-ask {
+    font-size: 20px;
+    padding: 15px 22px 15px 22px;
+    border-left : 1px solid lightgray;
+    border-right : 1px solid lightgray;
+    bottom : 0;
+    top :0
+}
+#header-user-menu{
+    display:block;
+    position: absolute;
+    top: 0;
+    right:0;
+}
+.tools {
+    display : grid;
+    grid-template-columns: 1fr 100px ;
+}
+.tools-left{
+    display : flex;
+    flex-direction:  row;
+}
+.tools-right{
+    display : flex;
+    flex-direction:  row;
+}
+
+@media(max-width:767px){
+    .breadcrumb{
+        font-size: 18px;
+    }
+    #user-icon {
+        margin-bottom:12px;
+    }
+    #tool-bar{
+        display : flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav {
+        margin : 5px;
+    }
+    .navbar-left .menu-xs, .navbar-right .menu-xs{
+        display: inline-block;
+    }
+    .navbar-left .menu-xs a, .navbar-right .menu-xs a{
+        padding : 10px;
+    }
+    .navbar-left{
+        margin-left : 10px;
+        display: inline-block;
+    }
+    .navbar-right{
+        margin-right : 10px;
+        display: inline-block;
+    }
+}
