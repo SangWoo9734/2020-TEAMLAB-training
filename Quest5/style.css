@@ -296,3 +296,7 @@ a:hover, a:visited {
         display: inline-block;
     }
 }
+
+#resize {
+    width : 50px;
+}
